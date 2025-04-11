@@ -23,5 +23,26 @@ This is a **proof-of-concept** project demonstrating file encryption, reboot for
 
 ---
 
+🧊 Convert to .exe using Replit + pkg
 
+You can turn your script into a Windows executable by using pkg directly in Replit.
+
+✅ Steps:
+Install pkg:
+npm install -g pkg
+Run the build command:
+pkg reboot-crypter.js --targets node18-win-x64 --output output.exe
+This does the following:
+
+Reads your script (reboot-crypter.js)
+Packages it with Node.js runtime
+Outputs a Windows .exe named output.exe
+✅ Check the result:
+On Replit, open the Files tab (left sidebar).
+Look for output.exe — if it’s there, success! 🎉
+🛠 Troubleshooting:
+If output.exe doesn’t appear:
+
+Double-check your command.
+Make sure pkg installed without errors.
 
